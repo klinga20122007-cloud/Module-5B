@@ -17,8 +17,23 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 ---
 
 ## 💻 Program
-Add code here
+```
+import pandas as pd
+import numpy as np
+exam_data = {
+    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'score': [85, 62, 77, 90, 58],
+    'attempts': [1, 3, 2, 1, 4],
+    'qualify': ['yes', 'no', 'yes', 'yes', 'no']
+}
+labels = ['a', 'b', 'c', 'd', 'e']
+df = pd.DataFrame(exam_data, index=labels)
+print("DataFrame:")
+print(df)
+```
 
 ## Output
+<img width="1462" height="477" alt="image" src="https://github.com/user-attachments/assets/d5fb9737-279a-4fd2-bbb6-a01698018061" />
 
 ## Result
+Thus the program to create and display a **DataFrame** using the **Pandas** library in Python from a given dictionary, and apply specific index labels to the rows is verified successfully.
